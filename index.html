@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/styles/main.css" />
+		<script src="./assets/scripts/main.js" type="module"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__inner container">
+				<a class="header__logo logo" href="/">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-qr-code-icon lucide-qr-code"
+					>
+						<rect width="5" height="5" x="3" y="3" rx="1" />
+						<rect width="5" height="5" x="16" y="3" rx="1" />
+						<rect width="5" height="5" x="3" y="16" rx="1" />
+						<path d="M21 16h-3a2 2 0 0 0-2 2v3" />
+						<path d="M21 21v.01" />
+						<path d="M12 7v3a2 2 0 0 1-2 2H7" />
+						<path d="M3 12h.01" />
+						<path d="M12 3h.01" />
+						<path d="M12 16v.01" />
+						<path d="M16 12h1" />
+						<path d="M21 12v.01" />
+						<path d="M12 21v-1" />
+					</svg>
+					<span>Dariali</span>
+				</a>
+				<ul class="header__social social">
+					<li class="social__item">
+						<a
+							class="social__link"
+							href="https://www.instagram.com/miss.dariali/"
+							target="_blank"
+						>
+							Instagram
+						</a>
+					</li>
+
+					<li class="social__item">
+						<a
+							class="social__link"
+							href="https://www.tiktok.com/@miss.dariali"
+							target="_blank"
+						>
+							TikTok
+						</a>
+					</li>
+					<li class="social__item">
+						<a
+							class="social__link"
+							href="https://www.youtube.com/@missdariali"
+							target="_blank"
+						>
+							Youtube
+						</a>
+					</li>
+					<li class="social__item">
+						<a
+							class="social__link"
+							href="https://t.me/s/dariali1"
+							target="_blank"
+						>
+							Telegram
+						</a>
+					</li>
+				</ul>
+				<a class="header__join-us-community-button button" href="#about-us">
+					<span>
+						🎬 О себе | 📱 TikTok | 📸 Instagram | 🎥 YouTube | 💌 Telegram
+					</span>
+					<span>
+						| 🎬 О себе | 📱 TikTok | 📸 Instagram | 🎥 YouTube | 💌 Telegram
+					</span>
+				</a>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero container" aria-labelby="hero-title">
+				<div class="hero__media">
+					<img
+						class="hero__image"
+						src="./assets/images/hero/1.jpg"
+						style="--heroMediaImageTransition: 0.6s"
+						srcset="
+							./assets/images/hero/1.jpg    1x,
+							./assets/images/hero/1@2x.jpg 2x
+						"
+						width="224"
+						height="224"
+						loading="lazy"
+						alt=""
+					/>
+					<img
+						class="hero__image"
+						style="--heroMediaImageTransition: 0.4s"
+						src="./assets/images/hero/2.jpg"
+						srcset="
+							./assets/images/hero/2.jpg    1x,
+							./assets/images/hero/2@2x.jpg 2x
+						"
+						width="288"
+						height="288"
+						loading="lazy"
+						alt=""
+					/>
+					<div class="hero__smartphone">
+						<img
+							class="hero__smartphone-image"
+							src="./assets/images/hero/tiktok-video.jpg"
+							srcset="
+								./assets/images/hero/tiktok-video.jpg    1x,
+								./assets/images/hero/tiktok-video@2x.jpg 2x
+							"
+							width="250"
+							height="554"
+							loading="lazy"
+							alt=""
+						/>
+					</div>
+					<img
+						class="hero__image"
+						style="--heroMediaImageTransition: 0.4s"
+						src="./assets/images/hero/3.jpg"
+						srcset="
+							./assets/images/hero/3.jpg    1x,
+							./assets/images/hero/3@2x.jpg 2x
+						"
+						width="288"
+						height="288"
+						loading="lazy"
+						alt=""
+					/>
+					<img
+						class="hero__image"
+						style="--heroMediaImageTransition: 0.6s"
+						src="./assets/images/hero/4.jpg"
+						srcset="
+							./assets/images/hero/4.jpg    1x,
+							./assets/images/hero/4@2x.jpg 2x
+						"
+						width="224"
+						height="224"
+						loading="lazy"
+						alt=""
+					/>
+				</div>
+				<h1 class="hero__title" id="hero-title">Dariali</h1>
+			</section>
+			<section
+				class="section container"
+				aria-labelledby="about-us-title"
+				id="about-us"
+			>
+				<header class="section__header">
+					<h2 class="section__title" id="about-us-title">Немного обо мне</h2>
+					<p class="section__description description">
+						Цок‑цок! С ранних лет погружена в медиа и создание видео для
+						интернета 🎬
+						<br />
+						На TikTok снимаю скетчи и короткие ролики, которые цепляют с первых
+						секунд ✨📱
+						<br />
+						Более 450 000 подписчиков и миллионы лайков — вместе создаём вайб и
+						веселье 💖
+					</p>
+				</header>
+				<div class="section__body about-us">
+					<ul class="about-us__grid">
+						<li class="about-us__tile">
+							<article class="about-us__card card">
+								<div class="card__header">
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-instagram-icon lucide-instagram"
+										>
+											<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+											<path
+												d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+											/>
+											<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+										</svg>
+									</div>
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+										>
+											<path
+												d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+											/>
+											<path d="m21 3-9 9" />
+											<path d="M15 3h6v6" />
+										</svg>
+									</div>
+								</div>
+								<h3 class="card__title h5">
+									<a
+										class="card__link"
+										href="https://www.instagram.com/miss.dariali/"
+										target="_blank"
+									>
+										Мой Instagram✨
+									</a>
+								</h3>
+								<p class="card__description description">
+									Следи за мной в Instagram — истории, фото, закулисные моменты
+									и много другого веселья 📸💖
+								</p>
+							</article>
+						</li>
+						<li class="about-us__tile">
+							<article class="about-us__card card">
+								<div class="card__header">
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-flame-icon lucide-flame"
+										>
+											<path
+												d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"
+											/>
+										</svg>
+									</div>
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+										>
+											<path
+												d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+											/>
+											<path d="m21 3-9 9" />
+											<path d="M15 3h6v6" />
+										</svg>
+									</div>
+								</div>
+								<h3 class="card__title h5">
+									<a
+										class="card__link"
+										href="https://www.tiktok.com/@miss.dariali"
+										target="_blank"
+									>
+										Мой TikTok 🎬
+									</a>
+								</h3>
+								<p class="card__description description">
+									Смотри скетчи и короткие видео, которые которые цепляют с
+									первых секунд ✨📱
+								</p>
+							</article>
+						</li>
+						<li class="about-us__tile">
+							<article class="about-us__card card">
+								<div class="card__header">
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-youtube-icon lucide-youtube"
+										>
+											<path
+												d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+											/>
+											<path d="m10 15 5-3-5-3z" />
+										</svg>
+									</div>
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+										>
+											<path
+												d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+											/>
+											<path d="m21 3-9 9" />
+											<path d="M15 3h6v6" />
+										</svg>
+									</div>
+								</div>
+								<h3 class="card__title h5">
+									<a
+										class="card__link"
+										href="https://www.youtube.com/@missdariali"
+										target="_blank"
+									>
+										Мой YouTube 🎥
+									</a>
+								</h3>
+								<p class="card__description description">
+									Большие видео, влоги, путешествия, закулисье и скетчи — полный
+									вайб веселья и всё, что происходит в дальнейших минутах моей
+									жизни ✨📺
+								</p>
+							</article>
+						</li>
+						<li class="about-us__tile">
+							<article class="about-us__card card">
+								<div class="card__header">
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-send-icon lucide-send"
+										>
+											<path
+												d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+											/>
+											<path d="m21.854 2.147-10.94 10.939" />
+										</svg>
+									</div>
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+										>
+											<path
+												d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+											/>
+											<path d="m21 3-9 9" />
+											<path d="M15 3h6v6" />
+										</svg>
+									</div>
+								</div>
+								<h3 class="card__title h5">
+									<a
+										class="card__link"
+										href="https://t.me/s/dariali1"
+										target="_blank"
+									>
+										Мой Telegram 🎥
+									</a>
+								</h3>
+								<p class="card__description description">
+									Смотри видео, кружки с контентом и эксклюзивные материалы
+									прямо в моём канале 📲✨
+								</p>
+							</article>
+						</li>
+						<li class="about-us__tile">
+							<article class="about-us__card card">
+								<div class="card__header">
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="20"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-handshake-icon lucide-handshake"
+										>
+											<path d="m11 17 2 2a1 1 0 1 0 3-3" />
+											<path
+												d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"
+											/>
+											<path d="m21 3 1 11h-2" />
+											<path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+											<path d="M3 4h8" />
+										</svg>
+									</div>
+									<div class="card__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+										>
+											<path
+												d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+											/>
+											<path d="m21 3-9 9" />
+											<path d="M15 3h6v6" />
+										</svg>
+									</div>
+								</div>
+								<h3 class="card__title h5">
+									<a
+										class="card__link"
+										href="https://www.instagram.com/dariali.cooperation/"
+										target="_blank"
+									>
+										Сотрудничество 🤝
+									</a>
+								</h3>
+								<p class="card__description description">
+									Для коллабораций, PR и совместных проектов пишите менеджеру в
+									Instagram 📩✨ Будем рады новым идеям и интересным
+									предложениям! 💖
+								</p>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

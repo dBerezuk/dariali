@@ -1,0 +1,68 @@
+@use './../helpers' as *;
+
+.header {
+	margin-bottom: rem(20);
+	padding-block: fluid(20, 10);
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: fluid(60, 20);
+	}
+
+	&__logo {
+		margin-right: auto;
+	}
+
+	&__join-us-community-button {
+		position: relative;
+		overflow: hidden;
+		width: rem(120);
+		white-space: nowrap;
+
+		@include hover {
+			span {
+				animation-play-state: paused;
+			}
+		}
+
+		span {
+			animation: moveText 30s linear infinite;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: var(--z-base);
+			top: 0;
+			height: 100%;
+			width: 30%;
+		}
+
+		&::before {
+			left: 0;
+			background: linear-gradient(
+				to right,
+				var(--color-accent),
+				rgba(248, 167, 207, 0)
+			);
+		}
+
+		&::after {
+			right: 0;
+			background: linear-gradient(
+				to left,
+				var(--color-accent),
+				rgba(248, 167, 207, 0)
+			);
+		}
+	}
+
+	&__social {
+		@include mobile {
+			display: none;
+		}
+	}
+}

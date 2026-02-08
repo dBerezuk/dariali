@@ -1,0 +1,81 @@
+@use './../helpers' as *;
+
+.hero {
+	&__media {
+		--heroMediaSpacingHorizont: #{calc(rem(24) * -1)};
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include tablet {
+			--heroMediaSpacingHorizont: #{calc(rem(80) * -1)};
+		}
+
+		@include mobile {
+			--heroMediaSpacingHorizont: #{calc(rem(140) * -1)};
+		}
+	}
+
+	&__image {
+		position: relative;
+		min-width: 0;
+		border-radius: fluid(24, 16);
+		animation: fideIn 1s backwards;
+		animation-delay: var(--heroMediaImageTransition);
+
+		&:has(~ .hero__smartphone) {
+			margin-right: var(--heroMediaSpacingHorizont);
+		}
+
+		&:first-child,
+		&:last-child {
+			z-index: -1;
+		}
+	}
+
+	&__smartphone {
+		position: relative;
+		overflow: hidden;
+		z-index: var(--z-base);
+		background-color: var(--color-black-base);
+		border: var(--border-alt);
+		border-radius: fluid(32, 24);
+
+		&::before {
+			@include abs-x;
+
+			content: '';
+			position: absolute;
+			top: 0.5%;
+			z-index: var(--z-base);
+			width: 25%;
+			height: 3%;
+			background-color: var(--color-black);
+			border-radius: rem(24);
+		}
+
+		&-image {
+			animation: fideIn 1s backwards;
+		}
+
+		&:has(+ .hero__image) ~ .hero__image {
+			margin-left: var(--heroMediaSpacingHorizont);
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-size: fluid(240, 90);
+		line-height: 1;
+		background: linear-gradient(120deg, #edded4, #f7c0db6d, #f7c0db, #edded4);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 300% 300%;
+		animation: tenderFlow 16s ease infinite;
+
+		@include mobile-above {
+			margin-top: rem(-40);
+		}
+	}
+}

@@ -1,0 +1,18 @@
+@use './../helpers' as *;
+
+.button {
+	display: flex;
+	align-items: center;
+	height: var(--input-height);
+	padding-inline: rem(12);
+	color: var(--color-black);
+	background-color: var(--color-accent);
+	border-radius: rem(24);
+	will-change: scale;
+
+	@include hover {
+		scale: 1.03;
+		color: inherit;
+		box-shadow: var(--shadow);
+	}
+}

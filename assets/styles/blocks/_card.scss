@@ -1,0 +1,39 @@
+@use './../helpers' as *;
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: rem(8);
+	height: 100%;
+	padding: rem(12);
+	background-color: var(--color-beige);
+	border: var(--border);
+	border-radius: rem(12);
+	transition-duration: var(--transition-duration);
+	will-change: scale;
+
+	&:hover {
+		scale: 1.02;
+		box-shadow: var(--shadow);
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: rem(16);
+	}
+
+	&__link {
+		@include hover {
+			color: inherit;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+		}
+	}
+}

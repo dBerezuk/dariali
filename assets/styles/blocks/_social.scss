@@ -1,0 +1,10 @@
+@use './../helpers' as *;
+
+.social {
+	display: flex;
+	justify-content: end;
+	flex-wrap: wrap;
+	align-items: center;
+	column-gap: fluid(32, 16);
+	row-gap: fluid(16, 8);
+}

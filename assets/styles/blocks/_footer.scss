@@ -1,0 +1,14 @@
+@use './../helpers' as *;
+
+.footer {
+	margin-top: var(--section-spacing-top);
+	padding-top: rem(40);
+	padding-bottom: var(--section-spacing-bottom);
+	border-top: var(--border);
+
+	&__cooperation {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(12);
+	}
+}

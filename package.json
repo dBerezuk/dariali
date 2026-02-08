@@ -1,0 +1,15 @@
+{
+  "name": "dariali",
+  "version": "1.0.0",
+  "description": "Project about Dariali",
+  "license": "ISC",
+  "author": "Denis Bereziuk",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch ."
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

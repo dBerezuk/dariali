@@ -1,0 +1,162 @@
+@use 'helpers' as *;
+
+html,
+body {
+	overflow-x: clip;
+}
+
+html.is-lock {
+	overflow: hidden;
+}
+
+body {
+	@include fluid-text(16, 14);
+
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-family-base);
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: var(--letter-spacing-base);
+	color: var(--color-black);
+	background-color: var(--color-bg);
+}
+
+main {
+	flex-grow: 1;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+h1,
+.h1 {
+	@include fluid-text(60, 34);
+}
+
+h2,
+.h2 {
+	@include fluid-text(48, 32);
+}
+
+h3,
+.h3 {
+	@include fluid-text(34, 28);
+}
+
+h4,
+.h4 {
+	@include fluid-text(28, 24);
+}
+
+h5,
+.h5 {
+	@include fluid-text(24, 20);
+}
+
+h6,
+.h6 {
+	font-size: rem(20);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	color: inherit;
+
+	@include hover {
+		color: var(--color-accent);
+	}
+
+	&[class] {
+		text-decoration: none;
+		text-underline-offset: 2px;
+	}
+}
+
+:focus-visible {
+	outline: rem(2) dashed var(--color-black);
+	outline-offset: rem(4);
+	transition-duration: 0s !important;
+}
+
+a,
+button {
+	&[aria-label] {
+		position: relative;
+
+		&::before {
+			@include abs-center;
+			@include square(rem(44));
+
+			content: '';
+		}
+	}
+}
+
+.description {
+	text-wrap: balance;
+
+	& > *:first-child {
+		margin-top: 0;
+	}
+
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+
+	& > :is(h1, h2, h3, h4, h5, h6, ul, ol, dl) {
+		margin-block: fluid(32, 24) rem(12);
+	}
+}
+
+@keyframes tenderFlow {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes fideIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes moveText {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

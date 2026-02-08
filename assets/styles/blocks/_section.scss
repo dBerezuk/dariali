@@ -1,0 +1,21 @@
+@use './../helpers' as *;
+
+.section {
+	display: flex;
+	flex-direction: column;
+	row-gap: fluid(40, 20);
+	margin-block: var(--section-spacing-top) var(--section-spacing-bottom);
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(20, 10);
+		text-align: center;
+		max-width: rem(720);
+		margin-inline: auto;
+	}
+
+	&__description {
+		font-weight: 600;
+	}
+}

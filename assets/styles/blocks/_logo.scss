@@ -1,0 +1,9 @@
+@use './../helpers' as *;
+
+.logo {
+	display: flex;
+	align-items: center;
+	column-gap: rem(6);
+	font-size: fluid(24, 20);
+	font-weight: 500;
+}
