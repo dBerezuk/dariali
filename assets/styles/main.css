@@ -407,6 +407,33 @@ button[aria-label]::before {
   font-weight: 500;
 }
 
+.offer {
+  padding-block: 8px;
+  background-color: var(--color-accent);
+}
+.offer__inner {
+  text-align: center;
+}
+.offer__description {
+  font-size: 0.875rem;
+}
+.offer__description a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media (any-hover: hover) {
+  .offer__description a:hover {
+    color: inherit;
+    opacity: 0.5;
+  }
+}
+@media (any-hover: none) {
+  .offer__description a:active {
+    color: inherit;
+    opacity: 0.5;
+  }
+}
+
 .header {
   margin-bottom: 1.25rem;
   padding-block: clamp(0.625rem, 0.3928571429rem + 0.9523809524vw, 1.25rem);

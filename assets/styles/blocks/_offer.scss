@@ -1,0 +1,24 @@
+@use './../helpers' as *;
+
+.offer {
+	padding-block: 8px;
+	background-color: var(--color-accent);
+
+	&__inner {
+		text-align: center;
+	}
+
+	&__description {
+		font-size: rem(14);
+
+		& a {
+			text-decoration: underline;
+			text-underline-offset: 2px;
+
+			@include hover {
+				color: inherit;
+				opacity: 0.5;
+			}
+		}
+	}
+}
